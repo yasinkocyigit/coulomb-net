@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+venv/
+.env
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Projeye Özel Veri ve Çıktı Klasörleri
+# Deney sonuçları, modeller ve grafiklerin GitHub'ı şişirmesini engeller
+exp*/
+output_plt*/
+outputs/
+data/
+*.log
+*.txt
+!requirements.txt

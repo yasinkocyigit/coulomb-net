@@ -1,0 +1,27 @@
+samples: 80000            # number of synthetic examples to draw from the three-charge model      # 5000-50000
+batch_size: 128           # larger batches provide more stable gradient estimates     #64 128 256
+epochs: 300              # training epochs; with early stopping this is a cap         #100-1000
+lr: 0.003               # base learning rate for the AdamW optimizer        #0.001, 0.005, 0.01, 0.02
+dropout: 0.05             # reduced dropout to prevent underfitting on synthetic data        #0.1, 0.2, 0.3
+hidden_dims: [2048, 1024, 512, 256]  # deeper, wider network improves approximation capacity   #1024, 512, 256, 128
+activation: gelu          # smoother activation often yields better convergence than ReLU    relu, elu, gelu, tanh
+output_activation: true  # constrain predictions to valid charge range via tanh         
+use_batchnorm: true      # enable batch normalisation for faster convergence
+weight_decay: 0.001   # L2 regularisation to combat overfitting        # 0.0001, 0.001, 0.01
+patience: 50             # early stopping patience on validation loss
+q_range: 5.0             # maximum absolute magnitude of charges in the dataset
+seed: 42                # ensure reproducible dataset generation and training
+# thresholds (minimum magnitudes)
+e_min: 1.0e6 # V/m, set None to disable
+f_min: 1.0e4 # N, set e.g. 1.0e-4 to sconstrain force too
+# oversampling to meet target size after filtering
+oversample: 10
+max_oversample: 25
+save_dir: ./test
+plot_options:
+  figsize: [12, 10]
+  title_fontsize: 20
+  label_fontsize: 16
+  tick_fontsize: 12
+  save_plots: true
+plot_dir: ./test
