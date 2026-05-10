@@ -12,8 +12,7 @@ venv/
 *.swp
 
 
-# Projeye Özel Veri ve Çıktı Klasörleri
-# Deney sonuçları, modeller ve grafiklerin GitHub'ı şişirmesini engeller
+
 exp*/
 output_plt*/
 outputs/
