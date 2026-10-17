@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360" role="img" aria-labelledby="title desc">
+  <title id="title">Inverse electrostatic problem</title>
+  <desc id="desc">High-level representation of estimating unknown charges from simulated observations.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#222"/>
+    </marker>
+    <style>
+      .box { fill: #fff; stroke: #222; stroke-width: 2; }
+      .head { fill: #222; }
+      .htext { fill: #fff; font: 600 18px Arial, sans-serif; text-anchor: middle; }
+      .text { fill: #222; font: 16px Arial, sans-serif; text-anchor: middle; }
+      .note { fill: #444; font: 14px Arial, sans-serif; text-anchor: middle; }
+      .arrow { fill: none; stroke: #222; stroke-width: 2; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1000" height="360" fill="#fff"/>
+  <text x="500" y="38" fill="#222" font="600 24px Arial, sans-serif" text-anchor="middle">Inverse Electrostatic Problem</text>
+
+  <rect class="box" x="55" y="100" width="245" height="140"/>
+  <rect class="head" x="55" y="100" width="245" height="42"/>
+  <text class="htext" x="177.5" y="127">Unknown Parameters</text>
+  <text class="text" x="177.5" y="178">Source charges</text>
+  <text class="text" x="177.5" y="207">q₁ and q₂</text>
+
+  <path class="arrow" d="M300 170 H375"/>
+
+  <rect class="box" x="385" y="80" width="230" height="180"/>
+  <rect class="head" x="385" y="80" width="230" height="42"/>
+  <text class="htext" x="500" y="107">Forward Model</text>
+  <text class="text" x="500" y="158">Coulomb's law</text>
+  <text class="text" x="500" y="187">Vector superposition</text>
+  <text class="text" x="500" y="216">Field and force</text>
+
+  <path class="arrow" d="M615 170 H690"/>
+
+  <rect class="box" x="700" y="100" width="245" height="140"/>
+  <rect class="head" x="700" y="100" width="245" height="42"/>
+  <text class="htext" x="822.5" y="127">Inverse Model</text>
+  <text class="text" x="822.5" y="178">Geometry and response</text>
+  <text class="text" x="822.5" y="207">Estimated q₁ and q₂</text>
+
+  <text class="note" x="500" y="315">The machine-learning model approximates the inverse mapping from observations to source charges.</text>
+</svg>

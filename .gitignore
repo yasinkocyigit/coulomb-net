@@ -1,0 +1,8 @@
+# Public release package
+
+outputs/
+test/
+data/
+exp*/
+__pycache__/
+*.pyc
